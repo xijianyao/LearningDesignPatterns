@@ -21,6 +21,7 @@ public class Main {
         Shape circleFactoryInstance = circleFactory.getShape();
         circleFactoryInstance.draw();
 
+
         //抽象工厂  抽象工厂模式是工厂方法的仅一步深化，是属于一种组合的工厂模式
         AbstractFactory abstractFactory;
         Gun gun;
