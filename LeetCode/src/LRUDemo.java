@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 /*
@@ -48,8 +49,8 @@ public class LRUDemo {
 
         //delete节点方法
         public void deleteNode(Node node) {
-            node.pre = node.next.pre;
-            node.next = node.pre.next;
+            node.next.pre = node.pre;
+            node.pre.next = node.next;
 
         }
 
@@ -100,6 +101,8 @@ public class LRUDemo {
 
 
     public static void main(String[] args) {
+
+
         LruCache cache = new LruCache(2);
         System.out.println(cache.get(1));
         cache.put(1, 1);
@@ -109,7 +112,9 @@ public class LRUDemo {
         cache.put(4, 4);
         System.out.println(cache.get(2));
         System.out.println(cache.get(1));
-
+        System.out.println(cache.get(4));
+        cache.put(5,5);
+        System.out.println(cache.get(4));
     }
 
 }
