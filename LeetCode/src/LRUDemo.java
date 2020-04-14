@@ -11,7 +11,6 @@ import java.util.List;
 public class LRUDemo {
 
     //需要构造双向列表，以及缓存
-
     static class Node {
         int key;
         int value;
