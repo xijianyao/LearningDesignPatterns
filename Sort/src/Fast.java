@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Fast {
     public static void main(String[] args) {
-        int[] ints = {5, 3, 7, 8, 2, 9, 4, 6};
+        Integer[] ints = {5, 3, 7, 8, 2, 9, 4, 6};
 
         int num = ints[0];
 
