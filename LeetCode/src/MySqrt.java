@@ -7,6 +7,7 @@ public class MySqrt {
         System.out.println(mySqrt(15));
 
         System.out.println(mySqrt(16));
+
     }
 
     static int mySqrt(int x) {
